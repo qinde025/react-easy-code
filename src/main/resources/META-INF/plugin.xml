@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.easycode.react</id>
+    <name>react easy code</name>
+    <version>1.0.0</version>
+    <vendor email="qinde025@126.com" >qinde</vendor>
+    <idea-version since-build="213"/>
+
+    <description>React template code tools for idea plugin</description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplates file="/liveTemplates/React.xml"/>
+        <liveTemplateContext implementation="com.easycode.react.reacteasycode.ReactTemplateProvider"/>
+    </extensions>
+</idea-plugin>
